@@ -8,7 +8,7 @@
 
 宝塔面板 Docker 镜像 Apache 版：https://github.com/Writeup001/BT_Panel_Docker_Apache
 
-此镜像具体环境配置如下：
+此镜像已安装 Web 服务所需要的服务环境，下载即可搭建网站。具体环境配置如下：
 ```
 CentOS 7
 
