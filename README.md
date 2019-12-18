@@ -1,8 +1,14 @@
-# BT_Panel_Docker
+# BT_Panel_Docker_Nginx
 宝塔面板（bt.cn）的 Docker 镜像，已经安装好 LNMP，下载即用。
 
 # 介绍
-本项目是宝塔面板（bt.cn）的Docker容器版本，基于CentOS7，已安装 LNMP 环境，具体环境配置如下：
+本项目是宝塔面板（bt.cn）的Docker容器版本，基于CentOS7，已安装 LNMP 环境
+
+此项目为 Nginx 版本的，如果你喜欢 Apache 当然可以选择 Apache 版本的。
+
+宝塔面板 Docker 镜像 Apache 版：https://github.com/Writeup001/BT_Panel_Docker_Apache
+
+此镜像具体环境配置如下：
 ```
 CentOS 7
 
