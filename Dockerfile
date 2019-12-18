@@ -1,6 +1,6 @@
 FROM centos:7
 WORKDIR /BT_Panel_Docker_Nginx
-COPY /Environment .
+COPY ./Environment .
 RUN yum  install -y wget && \
     sh install_6.0.sh && \
     sh /www/server/panel/install/install_soft.sh 1 install nginx 1.16 && \
