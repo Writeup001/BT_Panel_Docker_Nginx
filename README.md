@@ -59,11 +59,11 @@ docker rm -f bt_panel_nginx
 ## 默认帐号密码
 如果你是从 Docker Hub 上拉取下来的，那么后台地址以及帐号密码默认为：
 ```
-Bt-Panel-URL: http://IP:8888/d3a8f2a0
+Bt-Panel-URL: http://IP:8888/1ee53259
 
-username: kmohemn0
+username: jlazsb8j
 
-password: b32856b3
+password: d21908df
 ```
 其中 IP 为你服务器的 IP 地址，端口后面的字符串为宝塔面板（bt.cn）的安全登陆入口，username 和 password 分别为登陆帐号和密码。
 
