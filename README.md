@@ -1,7 +1,7 @@
-# BT_Panel_Docker_Nginx
+## BT_Panel_Docker_Nginx
 宝塔面板（bt.cn）的 Docker 镜像，已经安装好 LNMP，下载即用。
 
-# 介绍
+## 介绍
 本项目是宝塔面板（bt.cn）的Docker容器版本，基于CentOS7，已安装 LNMP 环境
 
 此项目为 Nginx 版本的，如果你喜欢 Apache 当然可以选择 Apache 版本的。
@@ -19,7 +19,7 @@ PHP 5.6
 MySQL 5.6
 ```
 
-# 编译安装
+## 编译安装
 ```
 docker build -t bt_panel_nginx .
 ```
@@ -29,41 +29,41 @@ docker build -t bt_panel_nginx .
 
 如果觉得编译安装比较麻烦，可以使用下面的在线安装，直接拉取 Docker Hub 的镜像。
 
-# Docker 在线安装
+## Docker 在线安装
 ```
 docker pull writeup/bt_panel_nginx
 ```
-这种方法是直接从 Docker Hub 上直接拉取下来的，
+这种方法是直接从 Docker Hub 上直接拉取下来的，如果你所在的地区对于访问 Docker Hub 不是很流畅，推荐你使用国内镜像站进行拉取。
 
-# 使用方法
+## 使用方法
 宝塔面板（bt.cn）需要开放的端口为 **8888|888|80|443|20|21** 分别为后台地址端口，phpMyAdmin 端口，Web 端口，HTTPS 端口，FTP 传输端口，FTP 接受端口。
 
 因为此镜像中仅安装了基本的 LNMP 服务，所以，仅需开放 8888 端口和 80 端口即可。如果你需要 HTTPS 的话也可以另行开启。
 
-## 启动命令
+### 启动命令
 ```
 docker run -itd -p 80:80 -p 888:888 -p 8888:8888 --name bt_panel_nginx writeup/bt_panel_nginx /bin/bash
 ```
-## 进入 Docker
+### 进入 Docker
 ```
 docker exec -it bt_panel_nginx /bin/bash
 ```
 进入 Docker 时会再次显示当前宝塔面板（bt.cn）的帐号密码等基本信息，所有内容你均可以进行修改。
 
-## 删除 Docker 名字
+### 删除 Docker 名字
 如果开启多次的话会提示名字已被占用，此时就需要删除原来的名字了，此命令并不会删除镜像文件。
 ```
 docker rm -f bt_panel_nginx
 ```
 
-# 默认帐号密码
+## 默认帐号密码
 如果你是从 Docker Hub 上拉取下来的，那么后台地址以及帐号密码默认为：
 ```
-Bt-Panel-URL: http://IP:8888/3da2098a
+Bt-Panel-URL: http://IP:8888/d3a8f2a0
 
-username: 7a2hvykv
+username: kmohemn0
 
-password: 7e58e233
+password: b32856b3
 ```
 其中 IP 为你服务器的 IP 地址，端口后面的字符串为宝塔面板（bt.cn）的安全登陆入口，username 和 password 分别为登陆帐号和密码。
 
@@ -72,7 +72,7 @@ password: 7e58e233
 宝塔Linux面板命令大全：https://www.bt.cn/btcode.html
 
 
-# License
+## License
 本项目代码使用 **GNU General Public License v3.0** 协议
 
 但是因为本项目主要功能来自于宝塔面板（bt.cn），所以在使用时仍需要遵守宝塔面板的使用协议
